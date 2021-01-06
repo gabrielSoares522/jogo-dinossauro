@@ -1,0 +1,67 @@
+body {
+  background-color: #fafafa;
+  overflow: hidden;
+  color: #666;
+}
+.dino {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-image: url("dino.png");
+  bottom: 0;
+}
+
+.cactus {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-image: url("cactus.png");
+  bottom: 0;
+}
+
+.game-over {
+  font-family: arial;
+  margin-top: 50px;
+  text-align: center;
+  font-size:30px;
+}
+
+.restart {
+  position: relative;
+  left:50%;
+  margin-left: -75px;
+  width: 150px;
+  font-size:25px;
+  color: #666;
+}
+
+.background {
+  position: absolute;
+  bottom: 40%;
+  background-image: url("background.png");
+  background-repeat: repeat-x;
+  /*animation: slideright 1100s infinite linear;*/
+  animation-iteration-count: infinite;
+  animation-duration: 1100s;
+  animation-timing-function: linear;
+  width: 100%;
+  height: 200px;
+}
+
+.message {
+  position: relative;
+  /*left:50%;*/
+  top:20px;
+  margin: auto;
+  width: 400px;
+  font-size:25px;
+}
+
+@keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0;
+  }
+}
